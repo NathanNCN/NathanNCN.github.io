@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="nav-logo">
+                <h2>My Portfolio</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#welcome" class="active"><i class="fas fa-home"></i><span>Welcome</span></a></li>
+                <li><a href="#about"><i class="fas fa-user"></i><span>About Me</span></a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i><span>Skills & Projects</span></a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i><span>Contact Me</span></a></li>
+                <li><a href="#resume"><i class="fas fa-file-alt"></i><span>Resume</span></a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="welcome" class="section active">
+                <div class="hero">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <div class="hero-left">
+                            <p class="small-heading">I am</p>
+                            <h1>Nathan <span class="highlight">Chau-Nguyen</span></h1>
+                            <h2>Aspiring Data Analyst and Student at the University of Waterloo for Bachelor of Mathematics</h2>    
+                            <div class="hero-buttons">
+                                <a href="#about" class="btn primary">About Me</a>
+                                <a href="#skills" class="btn secondary outline">Projects</a>
+                                <a href="#contact" class="btn secondary">Contact</a>
+                                <a href="#resume" class="btn secondary">Resume</a>
+                            </div>
+                        </div>
+                        <div class="profile-picture">
+                            <img src="images/headshot.jpg" alt="Profile Picture" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <div class="section-content">
+                    <h1>About Me</h1>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Education</div>
+                            <div class="timeline-content">
+                                <div class="timeline-image-container">
+                                    <img src="Images/Waterloo.jpeg" alt="University of Waterloo" class="timeline-image">
+                                </div>
+                                <h3>University of Waterloo</h3>
+                                <p>Bachelor of Mathematics, Minoring in Computing. Current GPA: 3.62. I was awarded President's Scholarship of Distinction, valued at $2000 for a admission average of 95%+</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Certifications</div>
+                            <div class="timeline-content">
+                                <div class="timeline-image-container">
+                                    <img src="Images/award.webp" alt="Certifications" class="timeline-image">
+                                </div>
+                                <h3>Professional Certifications</h3>
+                                <ul class="certification-list">
+                                    <li>
+                                        <div class="cert-item">
+                                            <span>100 Days of Code: The Complete Python Pro Bootcamp (Udemy) Dec.2024-Mar.2025</span>
+                                            <a href="https://www.udemy.com/certificate/UC-5c6d1378-19b7-4152-b13a-28ae631817a7/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com" class="view-cert-btn">View</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cert-item">
+                                            <span>IBM Databases and SQL for Data Science with Python (Coursera) Mar.2025-Mar.2025</span>
+                                            <a href="https://www.coursera.org/account/accomplishments/verify/QJ7QAD94TK6E" class="view-cert-btn">View</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cert-item">
+                                            <span>BM Data Science Professional Certificate (Coursera) Mar.2025-PRsent</span>
+                                            <p>On Going</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Skills</div>
+                            <div class="timeline-content">
+
+                                <h3>Technical Expertise</h3>
+                                <ul class="timeline-skills">
+                                    <li>Python</li>
+                                    <li>SQL</li>
+                                    <li>Power BI</li>
+                                    <li>Excel</li>
+                                    <li>Math</li>
+                                    <li>Javascript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Experience</div>
+                            <div class="timeline-content">
+                                <div class="timeline-image-container">
+                                    <img src="Images/Mcdonalds.png" alt="Experience" class="timeline-image">
+                                </div>
+                                <h3>McDonald's Line Cook/Inventory Control</h3>
+                                <p class="timeline-period">Sept. 2021 - Jul. 2022</p>
+                                <p>Prepared and cooked a variety of menu items according to company standards
+                                     Managed inventory levels, restocked supplies, and organized storage areas, reducing food waste
+                                    Demonstrated strong teamwork and communication skills while working in a fast-paced environment</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <div class="timeline-image-container">
+                                    <img src="Images/Tutor.jpg" alt="Experience" class="timeline-image">
+                                </div>
+                                <h3>Personal Tutor</h3>
+                                <p class="timeline-period">Sept. 2023 - Jun. 2024</p>
+                                <p>Provided one-on-one tutoring in math and physics to 5+ students resulting in an average of 10% improvement
+                                    Developed and implemented effective tutoring strategies tailored to students learning styles</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Hobbies</div>
+                            <div class="timeline-content">
+                                <div class="timeline-image-container">
+                                    <img src="Images/wrestling.jpg" alt="Hobbies" class="timeline-image">
+                                </div>
+                                <h3>Beyond Work</h3>
+                                <p>When I'm not learning, I love to wrestle. I wrestled for two 
+                                    year in high school. Where in grade 12 
+                                    I placed 1st at all local tournaments and placed Top 16 at 
+                                    the provincial level (OFSAA). I  am currently
+                                    a member of Waterloo's Wrestling club. Also, I love 
+                                    weightlifting and running. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <div class="section-content">
+                    <h1>Skills & Projects</h1>
+                    
+                    <div class="skills-container">
+                        <h2>Filter by Skills</h2>
+                        <div class="filter-container">
+                            <div id="skill-filters" class="skills-list">
+                                <button class="skill-filter active" data-skill="all">All</button>
+                                <button class="skill-filter" data-skill="python">Python</button>
+                                <button class="skill-filter" data-skill="javascript">Javascript</button>
+                                <button class="skill-filter" data-skill="html">HTML</button>
+                                <button class="skill-filter" data-skill="css">CSS</button>
+                                <button class="skill-filter" data-skill="bootstrap">Bootstrap</button>
+                                <button class="skill-filter" data-skill="powerbi">PowerBI</button>
+                                <button class="skill-filter" data-skill="data-analysis">Data Analysis</button>
+                                <button class="skill-filter" data-skill="mongodb">MongoDB</button>
+                                <button class="skill-filter" data-skill="sql">SQL</button>
+                            </div>
+                            <p class="filter-info">Select multiple skills to filter projects. Click again to deselect.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="projects-container">
+                        <h2>Projects</h2>
+                        <div class="projects-grid">
+                            <!-- Project 1 -->
+                            <div class="project-card" data-skills="python,powerbi,data-analysis">
+                                <div class="project-image">
+                                    <img src="Images/CafeSale.png" alt="Cafe Sale Project">
+                                </div>
+                                <div class="project-details">
+                                    <h3>Cafe Sale Analysis</h3>
+                                    <p>I worked with a messy Kaggle dataset, cleaning and preparing the data using Python's 
+                                        Pandas library. I visualized key insights using Matplotlib and then built an 
+                                        interactive Power BI dashboard to present my findings clearly and effectively.
+                                    </p>
+                                    <div class="project-tags">
+                                        <span class="project-tag" data-skill="python">Python</span>
+                                        <span class="project-tag" data-skill="powerbi">PowerBI</span>
+                                        <span class="project-tag" data-skill="data-analysis">Data Analysis</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="btn primary small show-dashboard" data-project="cafe">Show Dashboard</a>
+                                        <a href="https://youtu.be/FbfhiUuBTio" class="btn secondary small">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 2 -->
+                            <div class="project-card" data-skills="python,sql,data-analysis">
+                                <div class="project-image">
+                                    <img src="Images/coffee.png" alt="Mobile Phone Analysis Project">
+                                </div>
+                                <div class="project-details">
+                                    <h3>Mobile Phone Analysis</h3>
+                                    <p>Cleaned and processed data using SQL and Pandas to extract key information like RAM and Price.
+                                        Utilized Matplotlib to visualize trends and identify the best-performing models per brand.
+                                        Compiled findings in Jupyter Notebook, presenting a clear and structured analysis.
+                                    </p>
+                                    <div class="project-tags">
+                                        <span class="project-tag" data-skill="python">Python</span>
+                                        <span class="project-tag" data-skill="sql">SQL</span>
+                                        <span class="project-tag" data-skill="data-analysis">Data Analysis</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/NathanNCN/Mobile-Phone-Analysis" class="btn secondary small">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project 3 -->
+                            <div class="project-card" data-skills="python,javascript,html,css,bootstrap,mongodb">
+                                <div class="project-image">
+                                    <img src="Images/Ecompass.png" alt="Encompass Project">
+                                </div>
+                                <div class="project-details">
+                                    <h3>Encompass</h3>
+                                    <p>Designed and developed a full-stack productivity web application.
+                                        Implemented features including Flashcards, Pomodoro timer, Goal tracker to enhance organization and efficiency
+                                        Integrated Google Authenticator for robust user authentication and stored user data in a MongoDB database</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag" data-skill="python">Python</span>
+                                        <span class="project-tag" data-skill="javascript">Javascript</span>
+                                        <span class="project-tag" data-skill="html">HTML</span>
+                                        <span class="project-tag" data-skill="css">CSS</span>
+                                        <span class="project-tag" data-skill="bootstrap">Bootstrap</span>
+                                        <span class="project-tag" data-skill="mongodb">MongoDB</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://youtu.be/FbfhiUuBTio" class="btn primary small">Live Demo</a>
+                                        <a href="https://github.com/NathanNCN/Encompass" class="btn secondary small">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 4 -->
+                            <div class="project-card" data-skills="python,javascript,html,css,bootstrap,mongodb">
+                                <div class="project-image">
+                                    <img src="Images/Peak.png" alt="Peak Performance Project">
+                                </div>
+                                <div class="project-details">
+                                    <h3>Peak Performance</h3>
+                                    <p>Designed and developed a fitness tracking web application.
+                                        Implemented a goal-setting feature to set dietary and fitness targets, log personal records and a calorie tracker.
+                                        Leveraged the USDA API and Chart.js to provide users with accurate and comprehensive nutrition information.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag" data-skill="python">Python</span>
+                                        <span class="project-tag" data-skill="javascript">Javascript</span>
+                                        <span class="project-tag" data-skill="html">HTML</span>
+                                        <span class="project-tag" data-skill="css">CSS</span>
+                                        <span class="project-tag" data-skill="bootstrap">Bootstrap</span>
+                                        <span class="project-tag" data-skill="mongodb">MongoDB</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://www.youtube.com/watch?v=tVrFa_qRFVw&ab_channel=NathanChau-Nguyen" class="btn primary small">Live Demo</a>
+                                        <a href="https://github.com/NathanNCN/PeakPerformance" class="btn secondary small">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 5 -->
+                            <div class="project-card" data-skills="python,powerbi,data-analysis">
+                                <div class="project-image">
+                                    <img src="Images/BeverageSale.png" alt="Beverage Sale Analysis">
+                                </div>
+                                <div class="project-details">
+                                    <h3>Beverage Sales Analysis</h3>
+                                    <p> Created an interactive Power BI dashboard to analyze and visualize the performance of a sample dataset.
+                                        Performed data cleaning to handle missing data.
+                                    </p>
+                                    <div class="project-tags">
+                                        <span class="project-tag" data-skill="powerbi">PowerBI</span>
+                                        <span class="project-tag" data-skill="data-analysis">Data Analysis</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="btn primary small show-dashboard" data-project="beverage">Show Dashboard</a>
+                                        <a href="https://github.com/NathanNCN/Beverage-Sale-Analysis" class="btn secondary small">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="section-content">
+                    <h1>Contact Me</h1>
+                    <p>Feel free to reach out to me at: ncn.nathanchau.ncn@gmail.com</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/nathanchau-nguyen/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ncn.nathanchau.ncn@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/NathanNCN" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Add your Web3Forms access key below -->
+                        <input type="hidden" name="access_key" value="efd4aeb4-5963-40e7-84ac-e3c3c0cbf4b9">
+                        <input type="hidden" name="subject" value="New Contact Form Submission">
+                        <input type="hidden" name="from_name" value="My Portfolio Website">
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="resume" class="section">
+                <div class="section-content">
+                    
+                    <div class="resume-container">
+                        <div class="resume-preview">
+                            <img src="Images/FinalResume (1)_page-0001.jpg" alt="My Resume" class="resume-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Dashboard Modal -->
+    <div id="dashboard-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-image-container">
+                <img id="modal-image" src="" alt="Dashboard Preview">
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

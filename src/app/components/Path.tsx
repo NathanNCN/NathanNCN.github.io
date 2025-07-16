@@ -65,7 +65,7 @@ const Path = ({ name, description, theme = 'recruiter', index = 0 }: PathProps) 
                         className={`group flex items-center gap-2 bg-gradient-to-r ${styles.button} text-white px-6 py-3 rounded-xl text-sm sm:text-base transition-all duration-300 shadow-lg shadow-black/5 hover:shadow-xl hover:shadow-black/10`}
                         type="button"
                     >
-                        Take A Tour
+                        Let&apos;s Go
                         <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-1" />
                     </button>
                 </div>

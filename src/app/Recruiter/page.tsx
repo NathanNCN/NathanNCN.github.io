@@ -4,13 +4,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Terminal, Tool } from 'react-feather';
 import Navbar from '../components/Navbar';
+import Image from 'next/image';
 
 // Project data
 const projects = [
     {
         title: "LeetPrep",
         description: "An AI-powered coding interview preparation platform that simulates real coding interviews. Features include personalized technical and behavioral questions generated using Gemini API based on user preferences, intelligent answer analysis, and comprehensive feedback with tailored learning resources and performance ratings.",
-        image: "./Images/LeetPrep.png",
+        image: "/images/LeetPrep.png",
         tech: ["TypeScript", "Next.js", "Tailwind", "Golang"],
         link: "https://leet-prep.vercel.app/",
         githubLink: "https://github.com/yourusername/leetprep"
@@ -18,7 +19,7 @@ const projects = [
     {
         title: "UniLens",
         description: "A full-stack university application tracker that helps students explore and analyze successful admissions. Features include Google OAuth 2.0 Authentication for secure login, comprehensive application data management including grades and extracurriculars, and real admission statistics visualization.",
-        image: "./Images/UniLens.png",
+        image: "/images/UniLens.png",
         tech: ["TypeScript", "Next.js", "Tailwind", "Golang", "Supabase"],
         link: "https://uni-lens.vercel.app/",
         githubLink: "https://github.com/yourusername/unilens"
@@ -26,7 +27,7 @@ const projects = [
     {
         title: "Encompass",
         description: "A comprehensive full-stack productivity web application designed to enhance organization and efficiency. Features include an interactive Flashcard system for learning, customizable Pomodoro timer for time management, and Goal tracker for progress monitoring. Implemented secure user authentication through Google Authenticator with persistent data storage in MongoDB.",
-        image: "./Images/Encompass.png",
+        image: "/images/Encompass.png",
         tech: ["Python", "Flask", "JavaScript", "HTML", "CSS", "Bootstrap", "MongoDB"],
         link: "https://youtu.be/FbfhiUuBTio",
         githubLink: "https://github.com/NathanNCN/Encompass"
@@ -38,76 +39,76 @@ export default function RecruiterPage() {
         <>
             <Navbar />
             <div className="min-h-screen bg-zinc-50 px-4 sm:px-8 pt-24 pb-16">
-            <div className="max-w-4xl mx-auto">
-                {/* Header */}
-                <motion.h1 
-                    className="text-4xl sm:text-5xl lg:text-7xl font-light mb-8 bg-gradient-to-r from-zinc-900 to-zinc-800 bg-clip-text text-transparent"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                >
-                    Hey, I&apos;m Nathan!
-                </motion.h1>
-
-                {/* Location Info */}
-                <motion.p 
-                    className="text-lg sm:text-xl text-zinc-600 mb-8"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                >
-                        I&apos;m 19, based in <span className="text-zinc-900 hover:text-amber-700 transition-colors">Kitchener Ontario</span> 
-                        and I am a second year student majoring in Mathematics  at the University of Waterloo.
-                </motion.p>
-
-                    {/* Experience Section */}
-                <motion.div 
-                        className="mb-16 space-y-2"
-                    initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                <div className="max-w-4xl mx-auto">
+                    {/* Header */}
+                    <motion.h1 
+                        className="text-4xl sm:text-5xl lg:text-7xl font-light mb-8 bg-gradient-to-r from-zinc-900 to-zinc-800 bg-clip-text text-transparent"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h2 className="text-2xl font-light text-zinc-800 mb-6">My Experience</h2>
-                        <ul className="space-y-8 text-zinc-600">
-                            <li className="group">
-                                <div className="flex items-center gap-3">
-                                    <span className="w-1.5 h-1.5 bg-amber-400 rounded-full group-hover:scale-110 transition-transform"></span>
-                                    <span className="font-medium text-zinc-800">Plannery</span>
-                                    <span className="text-sm text-zinc-500">• Company Name</span>
-                                </div>
-                                <div className="mt-1 ml-4 space-y-2">
-                                    <p className="text-zinc-500 text-sm">May 2023 - Aug 2023</p>
-                                    <ul className="list-disc list-inside space-y-1 text-zinc-600">
-                                        <li>Developed and maintained full-stack web applications</li>
-                                        <li>Collaborated with cross-functional teams on project deliverables</li>
-                                        <li>Implemented new features and optimized existing codebase</li>
-                                    </ul>
-                                </div>
-                        </li>
+                        Hey, I&apos;m Nathan!
+                    </motion.h1>
 
-                            <li className="group">
-                                <div className="flex items-center gap-3">
-                                    <span className="w-1.5 h-1.5 bg-amber-400 rounded-full group-hover:scale-110 transition-transform"></span>
-                                    <span className="font-medium text-zinc-800">Digital Bootcamp @ Interaptix AI</span>
-                                    <span className="text-sm text-zinc-500">• University of Waterloo</span>
-                                </div>
-                                <div className="mt-1 ml-4 space-y-2">
-                                    <p className="text-zinc-500 text-sm">May 2025 - Aug 2025</p>
-                                    <ul className="list-disc list-inside space-y-1 text-zinc-600">
-                                        <li>Participating in a design-focused bootcamp covering digital strategy, UX principles, SEO, accessibility, and web design</li>
-                                        <li>Worked with Interaptix.ai to design and SEO optimize a website for their product Doppl</li>
-                                        <li>Collaborated with a team to gather feedback, iterate on designs, and implement changes based on user and stakeholder input.</li>
-                    </ul>
-                                </div>
-                        </li>
-                    </ul>
-                </motion.div>
+                    {/* Location Info */}
+                    <motion.p 
+                        className="text-lg sm:text-xl text-zinc-600 mb-8"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                    >
+                            I&apos;m 19, based in <span className="text-zinc-900 hover:text-amber-700 transition-colors">Kitchener Ontario</span> 
+                            and I am a second year student majoring in Mathematics  at the University of Waterloo.
+                    </motion.p>
 
-                {/* Projects Section */}
-                <motion.div 
-                    className="mb-16"
-                    initial={{ opacity: 0, y: 20 }}
+                        {/* Experience Section */}
+                    <motion.div 
+                            className="mb-16 space-y-2"
+                        initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            <h2 className="text-2xl font-light text-zinc-800 mb-6">My Experience</h2>
+                            <ul className="space-y-8 text-zinc-600">
+                                <li className="group">
+                                    <div className="flex items-center gap-3">
+                                        <span className="w-1.5 h-1.5 bg-amber-400 rounded-full group-hover:scale-110 transition-transform"></span>
+                                        <span className="font-medium text-zinc-800">Plannery</span>
+                                        <span className="text-sm text-zinc-500">• Company Name</span>
+                                    </div>
+                                    <div className="mt-1 ml-4 space-y-2">
+                                        <p className="text-zinc-500 text-sm">May 2023 - Aug 2023</p>
+                                        <ul className="list-disc list-inside space-y-1 text-zinc-600">
+                                            <li>Developed and maintained full-stack web applications</li>
+                                            <li>Collaborated with cross-functional teams on project deliverables</li>
+                                            <li>Implemented new features and optimized existing codebase</li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li className="group">
+                                    <div className="flex items-center gap-3">
+                                        <span className="w-1.5 h-1.5 bg-amber-400 rounded-full group-hover:scale-110 transition-transform"></span>
+                                        <span className="font-medium text-zinc-800">Digital Bootcamp @ Interaptix AI</span>
+                                        <span className="text-sm text-zinc-500">• University of Waterloo</span>
+                                    </div>
+                                    <div className="mt-1 ml-4 space-y-2">
+                                        <p className="text-zinc-500 text-sm">May 2025 - Aug 2025</p>
+                                        <ul className="list-disc list-inside space-y-1 text-zinc-600">
+                                            <li>Participating in a design-focused bootcamp covering digital strategy, UX principles, SEO, accessibility, and web design</li>
+                                            <li>Worked with Interaptix.ai to design and SEO optimize a website for their product Doppl</li>
+                                            <li>Collaborated with a team to gather feedback, iterate on designs, and implement changes based on user and stakeholder input.</li>
+                    </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </motion.div>
+
+                        {/* Projects Section */}
+                    <motion.div 
+                        className="mb-16"
+                        initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
@@ -124,11 +125,14 @@ export default function RecruiterPage() {
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                 >
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div className="relative h-[200px] md:h-[300px] bg-zinc-100 rounded-lg overflow-hidden">
-                                            <img 
+                                        <div className="relative h-[200px] md:h-[300px] rounded-lg overflow-hidden">
+                                            <Image 
                                                 src={project.image}
                                                 alt={project.title}
-                                                className="object-cover w-full h-full"
+                                                fill
+                                                sizes="(max-width: 768px) 100vw, 50vw"
+                                                className="object-cover"
+                                                priority={index === 0}
                                             />
                                         </div>
                                         <div className="flex flex-col justify-between">

@@ -30,12 +30,12 @@ export default function Home() {
           
           {/* Role Description */}
           <motion.p 
-            className="text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl leading-relaxed font-[200] tracking-wide pl-[1vw] lg:pl-0 text-neutral-500 mt-8 sm:mt-12"
+            className="text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-xl leading-relaxed font-[200] tracking-wide pl-[1vw] lg:pl-0 text-neutral-500 mt-8 sm:mt-12 mb-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.8 }}
           >
-            Student Mathematics @ University of Waterloo • Software Engineer • Kitchener, ON
+            Mathematics 2029 @ University of Waterloo • Aspiring Software Engineer • Kitchener, ON
           </motion.p>
          
           <TechStack />

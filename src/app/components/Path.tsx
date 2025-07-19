@@ -3,11 +3,13 @@
 import React from 'react';
 import { ArrowRight } from 'react-feather';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 interface PathProps {
     name: string;
     description: string;
     theme?: 'recruiter' | 'adventure' | 'mystery';
+    onClick?: () => void;
     index?: number;
 }
 
@@ -35,8 +37,11 @@ const themeStyles = {
     }
 };
 
-const Path = ({ name, description, theme = 'recruiter', index = 0 }: PathProps) => {
+const Path = ({ name, description, theme = 'recruiter', onClick, index = 0 }: PathProps) => {
     const styles = themeStyles[theme];
+    const router = useRouter();
+
+   
     
     return (
         <motion.div 
@@ -64,6 +69,7 @@ const Path = ({ name, description, theme = 'recruiter', index = 0 }: PathProps) 
                     <button 
                         className={`group flex items-center gap-2 bg-gradient-to-r ${styles.button} text-white px-6 py-3 rounded-xl text-sm sm:text-base transition-all duration-300 shadow-lg shadow-black/5 hover:shadow-xl hover:shadow-black/10`}
                         type="button"
+                        onClick={onClick}
                     >
                         Let&apos;s Go
                         <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-1" />

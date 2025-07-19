@@ -21,6 +21,33 @@ interface ImageCarouselProps {
     media: MediaItem[];
 }
 
+const renderMedia = (item: MediaItem) => {
+    if (item.type === 'video') {
+        return (
+            <div className="relative w-full h-full">
+                <iframe
+                    src={`${item.url}?autoplay=0&controls=1&rel=0`}
+                    className="absolute inset-0 w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                />
+            </div>
+        );
+    } else {
+        return (
+            <div className="relative w-full h-full">
+                <Image 
+                    src={item.url}
+                    alt="Hobby image"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-opacity duration-500"
+                />
+            </div>
+        );
+    }
+};
+
 const hobbies: Hobby[] = [
     {
         title: "Wrestling",
@@ -44,17 +71,17 @@ const hobbies: Hobby[] = [
         title: "Video Games",
         description: "Growing up, I've always loved video games, specially the thrill of competing against others online. These days, I'm hooked on Teamfight Tactics and Valorant. However, I see myself always comming back to my childhood favourite, Minecraft.",
         media: [
-            { type: 'image', url: './Images/VideoGames1.jpeg' },
-            { type: 'image', url: './Images/VideoGames2.jpg' },
-            { type: 'image', url: './Images/VideoGames3.jpg' }
+            { type: 'image', url: '/images/VideoGames1.jpeg' },
+            { type: 'image', url: '/images/VideoGames2.jpg' },
+            { type: 'image', url: '/images/VideoGames3.jpg' }
         ]
     },
     {
         title: "Fitness",
-        description: "Before wrestling, I fell in love with fitness and living an active, healthy lifestyle. I’m all about pushing my limits—chasing PRs, staying consistent, and feeling strong both mentally and physically. There’s nothing like the grind or the rush from a solid workout. Right now, I’m training hard to hit a 315 lb bench press.",
+        description: "Before wrestling, I fell in love with fitness and living an active, healthy lifestyle. I'm all about pushing my limits—chasing PRs, staying consistent, and feeling strong both mentally and physically. There's nothing like the grind or the rush from a solid workout. Right now, I'm training hard to hit a 315 lb bench press.",
         media: [
             { type: 'video', url: 'https://www.youtube.com/embed/DSkwOm1eeew' },
-            { type: 'image', url: './Images/Fitness1.png' },
+            { type: 'image', url: '/images/Fitness1.png' },
             { type: 'video', url: 'https://www.youtube.com/embed/d5R7uY9Inj4' }
         ]
     },
@@ -62,9 +89,9 @@ const hobbies: Hobby[] = [
         title: "Traveling with Friends/Family",
         description: "I love experiencing new things—especially with the people I cherish most. My first time camping was with friends, and it couldn't have been better—new adventures, late-night laughs, and memories I'll never forget.",
         media: [
-            { type: 'image', url: './Images/Camping1.png' },
-            { type: 'image', url: './Images/Camping2.png' },
-            { type: 'image', url: './Images/Camping3.png' }
+            { type: 'image', url: '/images/Camping1.png' },
+            { type: 'image', url: '/images/Camping2.png' },
+            { type: 'image', url: '/images/Camping3.png' }
         ]
     }
 ];
@@ -82,32 +109,6 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ media }) => {
 
     const goToImage = (index: number) => {
         setCurrentIndex(index);
-    };
-
-    const renderMedia = (item: MediaItem) => {
-        if (item.type === 'video') {
-            return (
-                <div className="relative w-full h-full">
-                    <iframe
-                        src={`${item.url}?autoplay=0&controls=1&rel=0`}
-                        className="absolute inset-0 w-full h-full"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    />
-                </div>
-            );
-        } else {
-            return (
-                <div className="relative w-full h-full">
-                    <Image 
-                        src={item.url}
-                        alt="Hobby image"
-                        fill
-                        className="object-cover transition-opacity duration-500"
-                    />
-                </div>
-            );
-        }
     };
 
     return (
@@ -276,8 +277,7 @@ export default function AdventurePage() {
                     {/* Behind the Scenes */}
                     <motion.section
                         initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
                         <div className="flex items-center gap-3 mb-8">
@@ -288,10 +288,12 @@ export default function AdventurePage() {
                             hover:shadow-emerald-100/50 transition-shadow duration-300">
                             <div className="relative h-[400px] rounded-lg overflow-hidden mb-6">
                                 <Image 
-                                    src="./Images/Family1.jpg"
+                                    src="/images/Family1.jpg"
                                     alt="My family"
                                     fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                     className="object-cover"
+                                    priority
                                 />
                             </div>
                             <p className="text-zinc-600 mb-4">

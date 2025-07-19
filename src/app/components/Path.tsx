@@ -3,7 +3,6 @@
 import React from 'react';
 import { ArrowRight } from 'react-feather';
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/navigation';
 
 interface PathProps {
     name: string;
@@ -39,9 +38,6 @@ const themeStyles = {
 
 const Path = ({ name, description, theme = 'recruiter', onClick, index = 0 }: PathProps) => {
     const styles = themeStyles[theme];
-    const router = useRouter();
-
-   
     
     return (
         <motion.div 

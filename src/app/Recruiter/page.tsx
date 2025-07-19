@@ -38,32 +38,32 @@ export default function RecruiterPage() {
         <>
             <Navbar />
             <div className="min-h-screen bg-zinc-50 px-4 sm:px-8 pt-24 pb-16">
-                <div className="max-w-4xl mx-auto">
-                    {/* Header */}
-                    <motion.h1 
-                        className="text-4xl sm:text-5xl lg:text-7xl font-light mb-8 bg-gradient-to-r from-zinc-900 to-zinc-800 bg-clip-text text-transparent"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        Hey, I&apos;m Nathan!
-                    </motion.h1>
+            <div className="max-w-4xl mx-auto">
+                {/* Header */}
+                <motion.h1 
+                    className="text-4xl sm:text-5xl lg:text-7xl font-light mb-8 bg-gradient-to-r from-zinc-900 to-zinc-800 bg-clip-text text-transparent"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    Hey, I&apos;m Nathan!
+                </motion.h1>
 
-                    {/* Location Info */}
-                    <motion.p 
-                        className="text-lg sm:text-xl text-zinc-600 mb-8"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                    >
+                {/* Location Info */}
+                <motion.p 
+                    className="text-lg sm:text-xl text-zinc-600 mb-8"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                >
                         I&apos;m 19, based in <span className="text-zinc-900 hover:text-amber-700 transition-colors">Kitchener Ontario</span> 
                         and I am a second year student majoring in Mathematics  at the University of Waterloo.
-                    </motion.p>
+                </motion.p>
 
                     {/* Experience Section */}
-                    <motion.div 
+                <motion.div 
                         className="mb-16 space-y-2"
-                        initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
@@ -84,7 +84,7 @@ export default function RecruiterPage() {
                                         <li>Implemented new features and optimized existing codebase</li>
                                     </ul>
                                 </div>
-                            </li>
+                        </li>
 
                             <li className="group">
                                 <div className="flex items-center gap-3">
@@ -98,16 +98,16 @@ export default function RecruiterPage() {
                                         <li>Participating in a design-focused bootcamp covering digital strategy, UX principles, SEO, accessibility, and web design</li>
                                         <li>Worked with Interaptix.ai to design and SEO optimize a website for their product Doppl</li>
                                         <li>Collaborated with a team to gather feedback, iterate on designs, and implement changes based on user and stakeholder input.</li>
-                                    </ul>
+                    </ul>
                                 </div>
-                            </li>
-                        </ul>
-                    </motion.div>
+                        </li>
+                    </ul>
+                </motion.div>
 
-                    {/* Projects Section */}
-                    <motion.div 
-                        className="mb-16"
-                        initial={{ opacity: 0, y: 20 }}
+                {/* Projects Section */}
+                <motion.div 
+                    className="mb-16"
+                    initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
@@ -239,7 +239,7 @@ export default function RecruiterPage() {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                </motion.div>
 
                   
                 </div>

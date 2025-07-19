@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Database, Terminal, Tool } from 'react-feather';
+import { Code, Terminal, Tool } from 'react-feather';
 import Navbar from '../components/Navbar';
 
 // Project data

@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Camera, Map, Code, Heart, Music, Globe, Target, ChevronLeft, ChevronRight } from 'react-feather';
-import { useRouter } from 'next/navigation';
+import { Code, Heart, Globe, Target, ChevronLeft, ChevronRight } from 'react-feather';
 import Navbar from '../components/Navbar';
+import Image from 'next/image';
 
 interface MediaItem {
     type: 'image' | 'video';
@@ -98,11 +98,14 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ media }) => {
             );
         } else {
             return (
-                <img 
-                    src={item.url}
-                    alt="Hobby image"
-                    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
-                />
+                <div className="relative w-full h-full">
+                    <Image 
+                        src={item.url}
+                        alt="Hobby image"
+                        fill
+                        className="object-cover transition-opacity duration-500"
+                    />
+                </div>
             );
         }
     };
@@ -167,8 +170,6 @@ const futureQuests = [
 ];
 
 export default function AdventurePage() {
-    const router = useRouter();
-
     return (
         <div className="min-h-screen bg-zinc-50">
             <Navbar theme="adventure" />
@@ -192,7 +193,7 @@ export default function AdventurePage() {
                             transition={{ duration: 0.5, delay: 0.2 }}
                             className="text-lg text-zinc-600"
                         >
-                            Hey, here are some of the hobbies and things I enjoy that make life a little more exciting. From my hobbies, travel and music, I'm always doing something new.
+                            Hey, here are some of the hobbies and things I enjoy that make life a little more exciting. From my hobbies, travel and music, I&apos;m always doing something new.
                         </motion.p>
                         <motion.div 
                             initial={{ opacity: 0, scale: 0.9 }}
@@ -200,7 +201,7 @@ export default function AdventurePage() {
                             transition={{ duration: 0.5, delay: 0.3 }}
                             className="mt-8 inline-block px-6 py-3 bg-emerald-100 rounded-full text-emerald-800"
                         >
-                            "We don't care what you can't do, we care what you can do" - Coach Bird
+                            &ldquo;We don&apos;t care what you can&apos;t do, we care what you can do&rdquo; - Coach Bird
                         </motion.div>
                     </motion.div>
 
@@ -286,16 +287,17 @@ export default function AdventurePage() {
                         <div className="bg-white rounded-2xl p-6 shadow-lg shadow-zinc-200/50 border border-zinc-200 
                             hover:shadow-emerald-100/50 transition-shadow duration-300">
                             <div className="relative h-[400px] rounded-lg overflow-hidden mb-6">
-                                <img 
-                                    src="./Images/Family1.jpg" 
-                                    alt="My family" 
-                                    className="absolute inset-0 w-full h-full object-cover"
+                                <Image 
+                                    src="./Images/Family1.jpg"
+                                    alt="My family"
+                                    fill
+                                    className="object-cover"
                                 />
                             </div>
                             <p className="text-zinc-600 mb-4">
-                            My biggest motivation comes from my family. Watching my parents work tirelessly at the nail salon
-                             and seeing my brother push through to get into Waterloo Engineering and build a solid career 
-                             reminds me why I need to stay focused. So I can do the same and make them proud.
+                                My biggest motivation comes from my family. Watching my parents work tirelessly at the nail salon
+                                and seeing my brother push through to get into Waterloo Engineering and build a solid career 
+                                reminds me why I need to stay focused. So I can do the same and make them proud.
                             </p>
                         </div>
                     </motion.section>

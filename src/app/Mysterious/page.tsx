@@ -3,11 +3,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Shuffle } from 'react-feather';
-import { useRouter } from 'next/navigation';
 import Navbar from '../components/Navbar';
+import Image from 'next/image';
 
 // Sample facts - you can replace these with your own
-const facts = [
+interface Fact {
+    type: 'text' | 'video' | 'image';
+    content: string;
+    caption?: string;
+}
+
+const facts: Fact[] = [
     {
         type: 'text',
         content: 'My Favorite Food is Shawarma',
@@ -39,7 +45,6 @@ const facts = [
 ];
 
 export default function MysteriousPage() {
-    const router = useRouter();
     const [currentFact, setCurrentFact] = React.useState(facts[0]);
 
     const randomizeFact = () => {
@@ -82,11 +87,14 @@ export default function MysteriousPage() {
                         )}
                         {currentFact.type === 'image' && (
                             <div className="space-y-4 w-full">
-                                <img 
-                                    src={currentFact.content} 
-                                    alt={currentFact.caption} 
-                                    className="max-w-full h-auto rounded-lg"
-                                />
+                                <div className="relative w-full h-64">
+                                    <Image 
+                                        src={currentFact.content} 
+                                        alt={currentFact.caption || ''} 
+                                        fill
+                                        className="object-cover rounded-lg"
+                                    />
+                                </div>
                                 <p className="text-sm text-zinc-500">{currentFact.caption}</p>
                             </div>
                         )}

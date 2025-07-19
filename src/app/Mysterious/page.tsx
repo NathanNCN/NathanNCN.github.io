@@ -67,7 +67,7 @@ export default function MysteriousPage() {
                         transition={{ duration: 0.5 }}
                     >
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light bg-gradient-to-r from-violet-600 to-purple-500 bg-clip-text text-transparent mb-6">
-                            Random Bits About Me
+                            Random Facts About Me
                         </h1>
                         <p className="text-lg text-zinc-600">
                             Click the button below to discover something unexpected

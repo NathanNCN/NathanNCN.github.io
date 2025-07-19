@@ -129,9 +129,9 @@ export default function RecruiterPage() {
                                             <Image 
                                                 src={project.image}
                                                 alt={project.title}
-                                                fill
-                                                sizes="(max-width: 768px) 100vw, 50vw"
-                                                className="object-cover"
+                                                width={800}
+                                                height={600}
+                                                className="object-cover w-full h-full"
                                                 priority={index === 0}
                                             />
                                         </div>

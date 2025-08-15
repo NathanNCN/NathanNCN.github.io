@@ -39,9 +39,9 @@ const renderMedia = (item: MediaItem) => {
                 <Image 
                     src={item.url}
                     alt="Hobby image"
-                    width={800}
-                    height={600}
-                    className="object-cover w-full h-full"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-opacity duration-500"
                 />
             </div>
         );
@@ -290,9 +290,9 @@ export default function AdventurePage() {
                                 <Image 
                                     src="/images/Family1.jpg"
                                     alt="My family"
-                                    width={1200}
-                                    height={800}
-                                    className="object-cover w-full h-full"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover"
                                     priority
                                 />
                             </div>

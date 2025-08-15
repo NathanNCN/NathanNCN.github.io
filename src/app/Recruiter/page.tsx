@@ -108,10 +108,9 @@ export default function RecruiterPage() {
                         {/* Projects Section */}
                     <motion.div 
                         className="mb-16"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5 }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.3 }}
                     >
                         <h2 className="text-2xl font-light text-zinc-800 mb-6">Featured Projects</h2>
                         <div className="space-y-8">
@@ -119,20 +118,23 @@ export default function RecruiterPage() {
                                 <motion.div 
                                     key={index}
                                     className="bg-white rounded-2xl p-6 shadow-lg shadow-zinc-200/50 border border-zinc-200 hover:shadow-xl transition-shadow duration-300"
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ duration: 0.3, delay: index * 0.1 }}
                                 >
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div className="relative h-[200px] md:h-[300px] rounded-lg overflow-hidden">
+                                        <div className="relative h-[200px] md:h-[300px] rounded-lg overflow-hidden bg-zinc-100">
                                             <Image 
                                                 src={project.image}
                                                 alt={project.title}
-                                                width={800}
-                                                height={600}
-                                                className="object-cover w-full h-full"
+                                                fill
+                                                sizes="(max-width: 768px) 100vw, 50vw"
+                                                className="object-cover"
                                                 priority={index === 0}
+                                                loading="eager"
+                                                onError={(e) => {
+                                                    console.error(`Error loading image for ${project.title}:`, e);
+                                                }}
                                             />
                                         </div>
                                         <div className="flex flex-col justify-between">

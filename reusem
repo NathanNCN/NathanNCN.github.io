@@ -1,0 +1,197 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{fontawesome}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\faLink~#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Nathan Chau-Nguyen} \\ \vspace{1pt}
+    \small 226-868-1971 $|$ \href{mailto:ncn.nathanchau.ncn@gmail.com}{ncn.nathanchau.ncn@gmail.com} $|$ 
+    \href{https://linkedin.com/in/NathanChau-Nguye}{linkedin.com/in/NathanChau-Nguyen} $|$
+    \href{https://www.itsnathanchau.co/}{itsnathanchau.co}
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: \textbf{Python}, \textbf{JavaScript}, \textbf{TypeScript}, \textbf{Go (Golang)}, \textbf{HTML}, \textbf{CSS}} \\
+     \textbf{Frameworks & Libraries}{: \textbf{React}, \textbf{Flask}, \textbf{Jinja}, \textbf{Next.js}, \textbf{Tailwind CSS}} \\
+     \textbf{Developer Tools}{: \textbf{GitHub}, \textbf{Visual Studio}, \textbf{PyCharm}, \textbf{MongoDB}, \textbf{SupaBase}, \textbf{Vercel}}
+    }}
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, Ontario}
+      {Bachelor of Mathematics Co-op}{Sept. 2024 -- Apr. 2029}
+      \begin{itemize}
+        \item \textbf{Scholarships:} President's Scholarship of Distinction
+      \end{itemize}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Software Engineer Intern}{May 2025 -- Sept 2025}
+        {Planeri}{Kitchener, Ontario}
+        \resumeItemListStart
+            \resumeItem{Engineered a \textbf{full-stack} educational platform with a \textbf{learning planner} using \textbf{Next.js}, \textbf{TypeScript}, and \textbf{Go}}
+            \resumeItem{Applied \textbf{secure coding practices} including \textbf{rate limiting}, \textbf{robust authentication}, \textbf{prompt sanitization}, and \textbf{injection prevention}}
+            \resumeItem{Identified and resolved \textbf{bugs} through \textbf{testing} and \textbf{debugging}, while documenting \textbf{core files} to streamline \textbf{onboarding} and \textbf{future development}}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+        {Interaptix.ai -- Digital BootCamp}{May 2025 -- Sept 2025}
+        {WeAccelerate Waterloo University}{Waterloo, Ontario}
+        \resumeItemListStart
+            \resumeItem{Completed an online \textbf{bootcamp} covering \textbf{website design}, \textbf{user flows}, and \textbf{UI/UX fundamentals}, applying concepts through \textbf{hands-on projects}}
+            \resumeItem{Collaborated with a team to \textbf{plan} and \textbf{design} a website for \textbf{Interaptix.ai's} \textbf{Doppl} product}
+            \resumeItem{Built and launched the website using \textbf{Squarespace}, implementing \textbf{SEO optimizations} that improved \textbf{site visibility} and \textbf{user experience}}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+        {Personal Tutor}{Sept. 2023 -- Jun. 2024}
+        {Self-employed}{Kitchener, Ontario}
+        \resumeItemListStart
+            \resumeItem{Provided \textbf{tutoring} in \textbf{math} and \textbf{physics} to \textbf{5+ students} resulting in an average of \textbf{10\% improvement}}
+            \resumeItem{Developed and implemented \textbf{effective tutoring strategies} tailored to students' \textbf{learning styles}}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+     \resumeProjectHeading
+        {\href{https://legitamint.com}{\textbf{Legitamint @ SpurHacks}} $|$ \emph{\textbf{TypeScript}, \textbf{Next.js}, \textbf{Tailwind CSS}}}{}
+        \resumeItemListStart
+            \resumeItem{Collaborated with a team to build a \textbf{Block Chain} app for verifying \textbf{student extracurricular involvement}}
+            \resumeItem{Developed \textbf{frontend components} with \textbf{React} and assisted in \textbf{testing} and \textbf{deployment}}
+        \resumeItemListEnd
+    
+    \resumeProjectHeading
+        {\href{https://github.com/NathanNCN/MealSync}{\textbf{MealSync}} $|$ \emph{\textbf{TypeScript}, \textbf{Next.js}, \textbf{Tailwind}, \textbf{SupaBase}}}{}
+        \resumeItemListStart
+            \resumeItem{Developed a \textbf{full-stack} meal planning platform and \textbf{grocery shopping automation} via \textbf{Instacart API}}
+            \resumeItem{Utilized \textbf{USDA FoodData Central API} to automatically analyze \textbf{custom recipes}, providing \textbf{macro nutrients}}
+            \resumeItem{Leveraged \textbf{SupaBase} database for \textbf{recipe storage} and \textbf{cloud storage} for user uploaded images}
+        \resumeItemListEnd
+    
+    \resumeProjectHeading
+        {\href{https://github.com/NathanNCN/LeetPrep}{\textbf{LeetPrep}} $|$ \emph{\textbf{TypeScript}, \textbf{Next.js}, \textbf{Tailwind}, \textbf{Golang}}}{}
+        \resumeItemListStart
+            \resumeItem{Built a \textbf{full-stack AI-powered} coding interview preparation platform to simulate \textbf{technical interviews}}
+            \resumeItem{Implemented \textbf{Gemini API} to generate \textbf{technical and behavioural questions} based on \textbf{user parameters}}
+            \resumeItem{Integrated \textbf{AI} to analyze answers and deliver \textbf{personalized feedback}, \textbf{learning resources}, and \textbf{performance rating}}
+        \resumeItemListEnd
+    
+    \resumeProjectHeading
+        {\href{https://github.com/NathanNCN/UniLens}{\textbf{UniLens}} $|$ \emph{\textbf{TypeScript}, \textbf{Next.js}, \textbf{Tailwind}, \textbf{Golang}, \textbf{Supabase}}}{}
+        \resumeItemListStart
+            \resumeItem{Developed a \textbf{full-stack} university application tracker to explore and analyze \textbf{successful admissions}}
+            \resumeItem{Integrated \textbf{Google OAuth 2.0 Authentication} for secure user login and stored information using \textbf{Supabase}}
+            \resumeItem{Enabled users to input and view \textbf{real applications}, including \textbf{grades}, \textbf{extracurriculars}, and \textbf{awards}}
+        \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+\end{document}

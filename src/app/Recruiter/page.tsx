@@ -52,13 +52,13 @@ export default function RecruiterPage() {
 
                     {/* Location Info */}
                     <motion.p 
-                        className="text-lg sm:text-xl text-zinc-600 mb-8"
+                        className="text-lg sm:text-xl text-zinc-800 mb-8"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                            I&apos;m 19, based in <span className="text-zinc-900 hover:text-amber-700 transition-colors">Kitchener Ontario</span> 
-                            and I am a second year student majoring in Mathematics  at the University of Waterloo.
+                            I&apos;m 19, based in Kitchener Ontario 
+                             and I am a second year student majoring in Mathematics  at the University of Waterloo.
                     </motion.p>
 
                         {/* Experience Section */}
@@ -70,19 +70,19 @@ export default function RecruiterPage() {
                             transition={{ duration: 0.5 }}
                         >
                             <h2 className="text-2xl font-light text-zinc-800 mb-6">My Experience</h2>
-                            <ul className="space-y-8 text-zinc-600">
-                                <li className="group">
+                            <ul className="space-y-8 text-zinc-800">
+                                                                <li className="group">
                                     <div className="flex items-center gap-3">
                                         <span className="w-1.5 h-1.5 bg-amber-400 rounded-full group-hover:scale-110 transition-transform"></span>
-                                        <span className="font-medium text-zinc-800">Plannery</span>
-                                        <span className="text-sm text-zinc-500">• Company Name</span>
+                                        <span className="font-medium text-zinc-800">Software Engineer Intern</span>
+                                        <span className="text-sm text-zinc-700">• Planeri, Kitchener, Ontario</span>
                                     </div>
                                     <div className="mt-1 ml-4 space-y-2">
-                                        <p className="text-zinc-500 text-sm">May 2023 - Aug 2023</p>
-                                        <ul className="list-disc list-inside space-y-1 text-zinc-600">
-                                            <li>Developed and maintained full-stack web applications</li>
-                                            <li>Collaborated with cross-functional teams on project deliverables</li>
-                                            <li>Implemented new features and optimized existing codebase</li>
+                                        <p className="text-zinc-700 text-sm">May 2025 – Sept 2025</p>
+                                        <ul className="list-disc list-inside space-y-1 text-zinc-800">
+                                            <li>Engineered a full-stack educational platform with a learning planner using Next.js, TypeScript, and Go</li>
+                                            <li>Applied secure coding practices including rate limiting, robust authentication, prompt sanitization, and injection prevention</li>
+                                            <li>Identified and resolved bugs through testing and debugging, while documenting core files to streamline onboarding and future development</li>
                                         </ul>
                                     </div>
                                 </li>
@@ -90,16 +90,31 @@ export default function RecruiterPage() {
                                 <li className="group">
                                     <div className="flex items-center gap-3">
                                         <span className="w-1.5 h-1.5 bg-amber-400 rounded-full group-hover:scale-110 transition-transform"></span>
-                                        <span className="font-medium text-zinc-800">Digital Bootcamp @ Interaptix AI</span>
-                                        <span className="text-sm text-zinc-500">• University of Waterloo</span>
+                                        <span className="font-medium text-zinc-800">Digital Bootcamp @ Interaptix.ai</span>
+                                        <span className="text-sm text-zinc-700">• WeAccelerate Waterloo University, Waterloo, Ontario</span>
                                     </div>
                                     <div className="mt-1 ml-4 space-y-2">
-                                        <p className="text-zinc-500 text-sm">May 2025 - Aug 2025</p>
-                                        <ul className="list-disc list-inside space-y-1 text-zinc-600">
-                                            <li>Participating in a design-focused bootcamp covering digital strategy, UX principles, SEO, accessibility, and web design</li>
-                                            <li>Worked with Interaptix.ai to design and SEO optimize a website for their product Doppl</li>
-                                            <li>Collaborated with a team to gather feedback, iterate on designs, and implement changes based on user and stakeholder input.</li>
-                    </ul>
+                                        <p className="text-zinc-700 text-sm">May 2025 – Sept 2025</p>
+                                        <ul className="list-disc list-inside space-y-1 text-zinc-800">
+                                            <li>Completed an online bootcamp covering website design, user flows, and UI/UX fundamentals, applying concepts through hands-on projects</li>
+                                            <li>Collaborated with a team to plan and design a website for Interaptix.ai's Doppl product</li>
+                                            <li>Built and launched the website using Squarespace, implementing SEO optimizations that improved site visibility and user experience</li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li className="group">
+                                    <div className="flex items-center gap-3">
+                                        <span className="w-1.5 h-1.5 bg-amber-400 rounded-full group-hover:scale-110 transition-transform"></span>
+                                        <span className="font-medium text-zinc-800">Personal Tutor</span>
+                                        <span className="text-sm text-zinc-700">• Self-employed, Kitchener, Ontario</span>
+                                    </div>
+                                    <div className="mt-1 ml-4 space-y-2">
+                                        <p className="text-zinc-700 text-sm">Sept. 2023 – Jun. 2024</p>
+                                        <ul className="list-disc list-inside space-y-1 text-zinc-800">
+                                            <li>Provided tutoring in math and physics to 5+ students resulting in an average of 10% improvement</li>
+                                            <li>Developed and implemented effective tutoring strategies tailored to students' learning styles</li>
+                                        </ul>
                                     </div>
                                 </li>
                             </ul>
@@ -142,7 +157,7 @@ export default function RecruiterPage() {
                                                 <h3 className="text-2xl font-light text-zinc-900 mb-3">
                                                     {project.title}
                                                 </h3>
-                                                <p className="text-zinc-600 mb-4">
+                                                <p className="text-zinc-800 mb-4">
                                                     {project.description}
                                                 </p>
                                                 <div className="flex flex-wrap gap-2 mb-4">
@@ -169,7 +184,7 @@ export default function RecruiterPage() {
                                                     href={project.githubLink}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="text-zinc-600 hover:text-zinc-700 transition-colors"
+                                                    className="text-zinc-800 hover:text-zinc-700 transition-colors"
                                                 >
                                                     GitHub →
                                                 </a>
@@ -234,7 +249,7 @@ export default function RecruiterPage() {
                                     <h3 className="text-lg font-medium text-zinc-800">Developer Tools</h3>
                                 </div>
                                 <div className="flex flex-wrap gap-2">
-                                    {["GitHub", "Visual Studio", "PyCharm", "MongoDB", "Supabase", "Docker", "PostgreSQL"].map((skill, index) => (
+                                    {["GitHub", "Visual Studio", "PyCharm", "MongoDB", "Supabase", "Docker", "PostgreSQL", "Vercel"].map((skill, index) => (
                                         <span 
                                             key={index}
                                             className="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm"

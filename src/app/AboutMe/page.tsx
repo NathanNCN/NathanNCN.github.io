@@ -69,7 +69,7 @@ const hobbies: Hobby[] = [
     },
     {
         title: "Video Games",
-        description: "Growing up, I've always loved video games, specially the thrill of competing against others online. These days, I'm hooked on Teamfight Tactics and Valorant. However, I see myself always comming back to my childhood favourite, Minecraft.",
+        description: "Growing up, I've always loved video games, especially the thrill of competing against others online. These days, I'm hooked on Teamfight Tactics and Valorant. However, I see myself always coming back to my childhood favourite, Minecraft.",
         media: [
             { type: 'image', url: '/images/VideoGames1.jpeg' },
             { type: 'image', url: '/images/VideoGames2.jpg' },
@@ -78,7 +78,7 @@ const hobbies: Hobby[] = [
     },
     {
         title: "Fitness",
-        description: "Before wrestling, I fell in love with fitness and living an active, healthy lifestyle. I'm all about pushing my limits—chasing PRs, staying consistent, and feeling strong both mentally and physically. There's nothing like the grind or the rush from a solid workout. Right now, I'm training hard to hit a 315 lb bench press.",
+        description: "Before wrestling, I fell in love with fitness and living an active, healthy lifestyle. I'm all about pushing my limits, chasing PRs, staying consistent, and feeling strong both mentally and physically. There's nothing like the grind or the rush from a solid workout. Right now, I'm training hard to hit a 315 lb bench press.",
         media: [
             { type: 'video', url: 'https://www.youtube.com/embed/DSkwOm1eeew' },
             { type: 'image', url: '/images/Fitness1.png' },
@@ -87,7 +87,7 @@ const hobbies: Hobby[] = [
     },
     {
         title: "Traveling with Friends/Family",
-        description: "I love experiencing new things—especially with the people I cherish most. My first time camping was with friends, and it couldn't have been better—new adventures, late-night laughs, and memories I'll never forget.",
+        description: "I love experiencing new things, especially with the people I cherish most. My first time camping was with friends, and it couldn't have been better, new adventures, late-night laughs, and memories I'll never forget.",
         media: [
             { type: 'image', url: '/images/Camping1.png' },
             { type: 'image', url: '/images/Camping2.png' },
@@ -149,12 +149,12 @@ const adventures = [
     {
         title: "First Ever Hackathon",
         date: "June 2025",
-        description: "Built an Web3 application for student verification tool in 72 hours"
+        description: "Built a Web3 application for student verification tool in 72 hours"
     },
     {
-        title: "OFSSA Wrestling in Hamilton",
+        title: "OFSAA Wrestling in Hamilton",
         date: "March 2024",
-        description: "Competed in the OFSSA Wrestling Championships in Hamilton, ON against the best wrestlers in the province"
+        description: "Competed in the OFSAA Wrestling Championships in Hamilton, ON against the best wrestlers in the province"
     },
     {
         title: "Benching 225",
@@ -194,7 +194,7 @@ export default function AdventurePage() {
                             transition={{ duration: 0.5, delay: 0.2 }}
                             className="text-lg text-zinc-600"
                         >
-                            Hey, here are some of the hobbies and things I enjoy that make life a little more exciting. From my hobbies, travel and music, I&apos;m always doing something new.
+                            Hey! Here are some of the hobbies and things I enjoy that make life more exciting. Whether it's my hobbies, travel, or music, I'm always exploring something new.
                         </motion.p>
                         <motion.div 
                             initial={{ opacity: 0, scale: 0.9 }}

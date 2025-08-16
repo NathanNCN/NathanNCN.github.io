@@ -194,7 +194,7 @@ export default function AdventurePage() {
                             transition={{ duration: 0.5, delay: 0.2 }}
                             className="text-lg text-zinc-600"
                         >
-                            Hey! Here are some of the hobbies and things I enjoy that make life more exciting. Whether it's my hobbies, travel, or music, I'm always exploring something new.
+                            Hey! Here are some of the hobbies and things I enjoy that make life more exciting. Whether it&apos;s my hobbies, travel, or music, I&apos;m always exploring something new.
                         </motion.p>
                         <motion.div 
                             initial={{ opacity: 0, scale: 0.9 }}

@@ -97,7 +97,7 @@ export default function RecruiterPage() {
                                         <p className="text-zinc-700 text-sm">May 2025 – Sept 2025</p>
                                         <ul className="list-disc list-inside space-y-1 text-zinc-800">
                                             <li>Completed an online bootcamp covering website design, user flows, and UI/UX fundamentals, applying concepts through hands-on projects</li>
-                                            <li>Collaborated with a team to plan and design a website for Interaptix.ai's Doppl product</li>
+                                            <li>Collaborated with a team to plan and design a website for Interaptix.ai&apos;s Doppl product</li>
                                             <li>Built and launched the website using Squarespace, implementing SEO optimizations that improved site visibility and user experience</li>
                                         </ul>
                                     </div>
@@ -113,7 +113,7 @@ export default function RecruiterPage() {
                                         <p className="text-zinc-700 text-sm">Sept. 2023 – Jun. 2024</p>
                                         <ul className="list-disc list-inside space-y-1 text-zinc-800">
                                             <li>Provided tutoring in math and physics to 5+ students resulting in an average of 10% improvement</li>
-                                            <li>Developed and implemented effective tutoring strategies tailored to students' learning styles</li>
+                                            <li>Developed and implemented effective tutoring strategies tailored to students&apos; learning styles</li>
                                         </ul>
                                     </div>
                                 </li>

@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-serif: 'Lora', ui-serif, Georgia, serif;
+  --font-sans: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
+
+  --color-canvas: #faf8f5;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f3efe8;
+  --color-border: #e5dfd4;
+  --color-ink: #2c2825;
+  --color-muted: #6b6560;
+  --color-accent: #5f7f6a;
+  --color-accent-hover: #4d6a56;
+  --color-accent-soft: #e8efe9;
+  --color-wash: #eef4f0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-anim {
+  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+}
+
+.hero-anim-d1 {
+  animation-delay: 0.06s;
+}
+.hero-anim-d2 {
+  animation-delay: 0.12s;
+}
+.hero-anim-d3 {
+  animation-delay: 0.18s;
+}
+.hero-anim-d4 {
+  animation-delay: 0.24s;
+}
+.hero-anim-d5 {
+  animation-delay: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-anim {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: color-mix(in srgb, var(--color-accent) 22%, transparent);
+  color: var(--color-ink);
+}
